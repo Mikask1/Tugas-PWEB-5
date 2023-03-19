@@ -1,0 +1,76 @@
+body{
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+.layout{
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo{
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.bg-offwhite{
+  background-color: #f1f1f1;
+}
+
+.bg-offwhiter{
+  background-color: #f7f7f7;
+}
+
+.carousel-control-next,
+.carousel-control-prev, .carousel-indicators  {
+    filter: invert(100%);
+}
+
+.h-screen{
+  height: 90vh;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.image-center{
+  margin: 0 auto;
+}
+
+main{
+  padding-top:40px;
+}
+
+.store{
+  padding-bottom: 40px;
+}
+.text-center{
+  text-align: center;
+}
+
+footer{
+  display: flex;
+  height: 125px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3{
+  font-weight: 600;
+}
+
+footer span{
+  border-top: 1px solid black;
+  width: 1rem;
+  margin: 0 1rem;
+}
+
+.copyright{
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 14px;
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>We Sell Stuff</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="preload"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="index.css" />
+		<script href="index.js"></script>
+	</head>
+	<body>
+		<div class="bg-white fixed-top">
+			<nav class="navbar navbar-expand-md navbar-light layout">
+				<a class="navbar-brand logo">WSS</a>
+				<button
+					class="navbar-toggler"
+					data-bs-toggle="collapse"
+					data-bs-target="#toggleMobileMenu"
+					aria-controls="toggleMobileMenu"
+					aria-expanded="false"
+					aria-label="Toggle Navbar"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="toggleMobileMenu">
+					<ul class="navbar-nav ms-auto text-center">
+						<li>
+							<a class="nav-link" href="#">Home</a>
+						</li>
+            <li>
+							<a class="nav-link" href="#store">Store</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#">Support</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#">About Us</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<main>
+			<div class="bg-offwhite">
+				<section
+					id="hero-carousel"
+					class="carousel slide layout"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#hero-carousel"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#hero-carousel"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#hero-carousel"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="images/thecomb.jpg"
+								class="d-block w-75 image-center"
+								alt="..."
+                style="padding-top:2rem;"
+							/>
+							<h2>The Comb</h2>
+							<p style="padding-bottom: 2rem">
+								The greatest comb to ever exist on earth
+							</p>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="images/asml.jpg"
+								class="d-block w-75 image-center"
+								alt="..."
+                style="padding-top:2rem;"
+							/>
+							<h2>ASML TWINSCAN NXE:3350B</h2>
+							<p style="padding-bottom: 2rem">
+								7 and 5nm nodes EUV volume production
+							</p>
+						</div>
+						<div class="carousel-item" style="height: 100%">
+							<img
+								src="images/usdollar.jpg"
+								class="d-block w-75 image-center"
+								alt="..."
+                style="padding-top:2rem;"
+							/>
+							<h2>1 US Dollar</h2>
+							<p style="padding-bottom: 2rem">
+								Literally 1 US Dollar
+							</p>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#hero-carousel"
+						data-bs-slide="prev"
+					>
+						<span
+							class="carousel-control-prev-icon"
+							aria-hidden="true"
+						></span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#hero-carousel"
+						data-bs-slide="next"
+					>
+						<span
+							class="carousel-control-next-icon"
+							aria-hidden="true"
+						></span>
+					</button>
+				</section>
+			</div>
+			<div class="bg-offwhiter store" id="store" style="padding-top: 5rem">
+				<section class="layout container">
+					<h1 class="text-center">Our Store</h1>
+					<section class="row g-3" style="padding-top: 3rem">
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="images/thecomb.jpg"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">The Comb</h5>
+									<p class="card-text">
+										Introducing the ultimate hair care tool
+										- The Comb, which boasts the title of
+										"the greatest comb to ever exist on
+										earth." Designed with precision and
+										crafted from high-quality materials,
+										this comb is a game-changer in the world
+										of hair care.
+									</p>
+                  <a href="#" class="btn btn-primary w-100">Buy</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="images/asml.jpg"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">
+										ASML TWINSCAN NXE:3350B EUV Litography
+									</h5>
+									<p class="card-text">
+										The ASML TWINSCAN NXE:3350B is a
+										state-of-the-art extreme ultraviolet
+										(EUV) lithography machine used in the
+										semiconductor industry for advanced chip
+										manufacturing. It uses a 13.5 nanometer
+										(nm) wavelength light source to create
+										ultrafine features on silicon wafers,
+										enabling the production of the most
+										advanced microchips with smaller feature
+										sizes and higher performance.
+									</p>
+                  <a href="#" class="btn btn-primary w-100">Buy</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="images/usdollar.jpg"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">1 US Dollar</h5>
+									<p class="card-text">
+										Are you ready to invest in something
+										that will truly pay off? Look no further
+										than our exclusive offer - one US dollar
+										available for purchase on our website!
+										This isn't just any dollar bill - it's a
+										symbol of possibility and potential. By
+										buying this dollar, you're making an
+										investment in your future, putting your
+										money where your dreams are.
+									</p>
+                  <a href="#" class="btn btn-primary w-100">Buy</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="images/thecomb.jpg"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">The Comb</h5>
+									<p class="card-text">
+										Behold the ultimate hair companion
+										- The Comb! Designed to
+										meet the needs of modern, on-the-go
+										individuals, this comb boasts a sleek
+										and ergonomic design that fits perfectly
+										in the palm of your hand. With its
+										high-quality and durable materials, this
+										comb is built to last, ensuring that
+										you'll enjoy smooth and effortless
+										detangling for years to come.
+									</p>
+                  <a href="#" class="btn btn-primary w-100">Buy</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="images/usdollar.jpg"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">1 US Dollar</h5>
+									<p class="card-text">
+										While it may seem like just a small
+										piece of paper or a coin, the US dollar
+										is much more than that - it is a symbol
+										of economic power and stability. As the
+										world's most widely used currency, the
+										US dollar is a crucial element of global
+										trade and commerce, facilitating
+										transactions between individuals,
+										businesses, and governments around the
+										world. So, buy your 1 US Dollar now!
+									</p>
+                  <a href="#" class="btn btn-primary w-100">Buy</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="images/asml.jpg"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">
+										ASML TWINSCAN NXE:3350B EUV Litography
+									</h5>
+									<p class="card-text">
+										Introducing the cutting-edge ASML
+										TWINSCAN NXE:3350B EUV Lithography
+										system - the ultimate solution for your
+										high-performance semiconductor
+										manufacturing needs. With its advanced
+										Extreme Ultraviolet (EUV) technology,
+										this state-of-the-art system is designed
+										to deliver unprecedented precision and
+										speed, helping you to achieve higher
+										yields and faster time-to-market.
+									</p>
+                  <a href="#" class="btn btn-primary w-100">Buy</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="images/asml.jpg"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">
+										ASML TWINSCAN NXE:3350B EUV Litography
+									</h5>
+									<p class="card-text">
+										Revolutionize your semiconductor
+										manufacturing with the ASML TWINSCAN
+										NXE:3350B EUV Lithography system - the
+										next generation of lithography
+										technology. This cutting-edge system is
+										designed to deliver exceptional
+										performance, enabling you to produce
+										high-quality chips faster and more
+										efficiently than ever before.
+									</p>
+                  <a href="#" class="btn btn-primary w-100">Buy</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="images/thecomb.jpg"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">The Comb</h5>
+									<p class="card-text">
+										Say goodbye to bad hair days with our
+										innovative product -- The Comb! Crafted
+										with precision and care, this comb is
+										designed to gently glide through your
+										hair, effortlessly smoothing out knots
+										and tangles. Whether you have long,
+										curly locks or short and straight hair,
+										our comb is the perfect tool to keep
+										your mane looking sleek and polished.
+									</p>
+                  <a href="#" class="btn btn-primary w-100">Buy</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="card">
+								<img
+									src="images/usdollar.jpg"
+									class="card-img-top"
+								/>
+								<div class="card-body">
+									<h5 class="card-title">1 US Dollar</h5>
+									<p class="card-text">
+										Invest in your financial future with the
+										power of the US dollar! Whether you're
+										saving for retirement, planning for a
+										big purchase, or simply looking to grow
+										your wealth, the US dollar is a smart
+										choice. As a highly stable and secure
+										currency, the US dollar has long been a
+										favorite among investors and savers
+										around the world.
+									</p>
+                  <a href="#" class="btn btn-primary w-100">Buy</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+			</div>
+		</main>
+    <footer class="bg-offwhite">
+      <span></span>
+      <h3>WSS</h3>
+      <span></span>
+    </footer>
+    <p class="copyright bg-offwhite">Copyright © 2023 We Sell Stuff Inc. All rights reserved.</p>
+	</body>
+</html>
